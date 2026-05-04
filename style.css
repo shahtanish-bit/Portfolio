@@ -387,7 +387,7 @@ header ul li a {
   cursor: pointer;
   min-width: 400px;
   transition: 0.5s;
-  mix-blend-mode: difference;
+  mix-blend-mode: exclusion;
 }
 
 .project-vidbox video{
@@ -399,7 +399,53 @@ header ul li a {
 }
 
 .project-vidbox video:hover{
-    box-shadow: 0 0 30px lightgray;
+  box-shadow: 0 0 30px lightgray;
+}
+
+.project-info{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 10%;
+}
+
+.project-info h1{
+  width: 90%;
+  font-size: 25px;
+  font-weight: bold;
+  text-wrap: nowrap;
+  margin-bottom: 10px;
+  margin-top: o;
+  max-width: 450px;
+}
+
+.project-info p{
+  width: 90%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 50px;
+  margin-top: 0;
+
+}
+
+.project-info button{
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #727fdeb4;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #72a1de86;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.project-info button:hover{
+  box-shadow: 0 0 15px #72a1de86;
+  transition: 0.23s;
+  opacity: 0.5;
+  transform: translateY(-4px);
 }
 
 /* gradiant animation */

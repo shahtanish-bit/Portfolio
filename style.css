@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  color: #e0ffc3;
+  color: #72a1de;
 }
 
 /* for the bg */
@@ -73,6 +73,7 @@ header {
   color: #72a1de;
 }
 
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -113,7 +114,7 @@ header {
   font-size: 18px;
   color: lightgray;
   text-decoration: none;
-  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
   transition: 0.3s;
@@ -123,6 +124,7 @@ header {
   background: #727fde;
   color: black;
   box-shadow: 0 0 15px #727fde67;
+  transform: translateY(-2.5px);
 }
 
 /* bg black hole video */

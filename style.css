@@ -62,7 +62,8 @@ header ul {
   padding: 15px 15px;
   border-radius: 50px;
   background-color: rgba(0, 0, 69, 0.3);
-  box-shadow: 0 0 10px #727fde;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #727fde;
   text-decoration: none;
 }
 
@@ -79,11 +80,7 @@ header ul li a {
 
 .box-ions {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.box-ions {
-  width: 162px;
+  gap: 40px;
 }
 
 .box-ions a {
@@ -101,8 +98,10 @@ header ul li a {
 }
 
 .box-ions a:hover {
-  background-color: #e0ffc3;
-  transform: translateY(-3px);
+  background-color: #727fde;
+  color: black;
+  box-shadow: 0 0 15px #727fde6f;
+  /* transform: translateY(-3px); */
 }
 
 /* bg black hole video */
@@ -116,6 +115,7 @@ header ul li a {
 }
 
 .blackhole-box video {
+  z-index: -1;
   width: 100%;
   margin-top: -23.5%;
 }
@@ -186,6 +186,7 @@ header ul li a {
 
 .hero-vid-box video {
   height: 900px;
+  mix-blend-mode: lighten;
 }
 
 /* for scroll down animation */
@@ -355,6 +356,8 @@ header ul li a {
 .card:nth-child(4) h1{
   bottom: 35%;
 }
+
+
 
 /* gradiant animation */
 .gradiant {

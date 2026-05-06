@@ -186,6 +186,8 @@ header {
 }
 
 .hero-info button {
+  font-size: 14px;
+  font-weight: 700;
   color: white;
   padding: 15px 35px;
   border-radius: 10px;
@@ -198,7 +200,7 @@ header {
 .hero-info button:hover {
   box-shadow: 0 0 15px #72a1de86;
   transition: 0.23s;
-  transform: translateY(-4px);
+  /* transform: translateY(-4px); */
 }
 
 .hero-vid-box {
@@ -208,7 +210,7 @@ header {
 }
 
 .hero-vid-box video {
-  height: 900px;
+  height: 550px;
   mix-blend-mode: lighten;
 }
 
@@ -360,7 +362,7 @@ header {
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 0px;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   margin: 40px;
   max-width: calc(100% - 80px);
@@ -420,6 +422,7 @@ header {
   display: block;
   padding: 12px 24px;
   background: rgba(20, 25, 45, 0.9);
+  backdrop-filter: blur(5px);
   border: 1px solid rgba(114, 161, 222, 0.4);
   border-radius: 30px;
   font-size: 14px;
@@ -431,10 +434,12 @@ header {
 }
 
 .tag:hover {
+  font-size: 15px;
+  font-weight: 500;
   background: rgba(114, 161, 222, 0.3);
   border-color: #72a1de;
   box-shadow: 0 0 15px rgba(114, 161, 222, 0.4);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
 }
 
 /* gradiant animation */

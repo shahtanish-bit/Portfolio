@@ -550,7 +550,7 @@ header {
   }
 }
 
-/* mobile responsive */
+/* mobile ration adjustments */
 @media (max-aspect-ratio: 16/9) {
   .back-vid {
     width: auto;
@@ -621,3 +621,57 @@ header {
         left: 30%;
     }
 }
+
+/* mobile responsive */
+@media screen and (max-width: 700px){
+    header {
+        position: fixed;
+        height: 50px;
+    }
+
+    header .nav-links{
+        display: none;
+    }
+
+    header .socials{
+        display: none;
+    }
+
+    .logo h1{
+      font-size: 25px;
+    }
+
+    .blackhole-box video{
+      margin-top: -16%;
+    }
+
+    .hero{
+      flex-direction: column;
+    }
+
+    .hero-info{
+      bottom: 50%;
+    }
+
+    .hero-info h2{
+      font-size: 30px;
+      line-height: 32px;
+      margin-bottom: 30px;
+    }
+
+    .hero-info h1{
+      line-height: 50px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-vid-box video{
+      display: none;
+    }
+
+    .flex-video video{
+      width: 100%;
+
+    }
+}
+

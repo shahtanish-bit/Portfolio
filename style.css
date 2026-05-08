@@ -644,11 +644,18 @@ header {
   padding-left: 41px;
   padding-right: 35px;
   padding-bottom: 15px;
-  border-radius: 10px;
+  border-radius: 50px;
   border: 1px solid #727fdeb4;
   background-color: #2200493d;
   box-shadow: 0 0 5px #72a1de86;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.experience-btn:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
 }
 
 @media (max-width: 768px) {

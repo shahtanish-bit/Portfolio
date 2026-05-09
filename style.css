@@ -84,18 +84,32 @@ header {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px #727fde65;
+  transition: 0.3s;
+}
+
+.nav-links:hover{
+  padding: 12px 30px;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
 }
 
 .nav-links li a {
   text-decoration: none;
+  font-size: 16px;
   font-weight: 700;
   padding: 0 10px;
   color: white;
-  transition: color 0.2s;
+  transition: 0.3s;
 }
 
 .nav-links li a:hover {
   color: #72a1de;
+  font-size: 17px;
+  font-weight: 700;
+  transform: translateY(5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
 }
 
 .socials {

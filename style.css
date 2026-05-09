@@ -295,7 +295,7 @@ header {
 }
 
 .info-container {
-  max-width: calc(100% - 80px);
+  max-width: fit-content;
   width: 100%;
 }
 

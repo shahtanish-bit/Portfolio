@@ -591,6 +591,8 @@ header {
 }
 
 .experience-card {
+  display: flex;
+  align-items: center;
   background: rgba(15, 15, 30, 0.6);
   border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 40px;
@@ -654,6 +656,7 @@ header {
 
 
 .experience-link{
+  width: fit-content;
   margin-top: 30px;
   margin-bottom: 50px;
 }

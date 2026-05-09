@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -40,7 +44,7 @@ header {
   align-items: center;
   background: rgba(20, 20, 30, 0.322);
   backdrop-filter: blur(15px);
-  box-shadow: 0 0 25px #72a1de8d;
+  box-shadow: 0 0 50px #72a1de8d;
   z-index: 1000;
 }
 
@@ -78,7 +82,7 @@ header {
   display: flex;
   list-style: none;
   gap: 8px;
-  padding: 10px 28px;
+  padding: 15px 30px;
   border-radius: 50px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(0, 0, 0, 0.6);
@@ -88,8 +92,8 @@ header {
 }
 
 .nav-links:hover{
-  padding: 12px 30px;
-  transform: translateY(-5px);
+  padding: 18px 30px;
+  transform: translateY(6px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -162,7 +166,7 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
   align-items: center;
   justify-content: space-between;
 }
@@ -204,17 +208,18 @@ header {
   font-weight: 700;
   color: white;
   padding: 15px 35px;
-  border-radius: 10px;
+  border-radius: 25px;
   border: 1px solid #727fdeb4;
   background-color: #2200493d;
   box-shadow: 0 0 5px #72a1de86;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .hero-info button:hover {
-  box-shadow: 0 0 15px #72a1de86;
-  transition: 0.23s;
-  /* transform: translateY(-4px); */
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
 }
 
 .hero-vid-box {
@@ -473,9 +478,12 @@ header {
   padding: 25px 70px;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-  margin: 40px;
-  max-width: calc(100% - 80px);
-  min-height: calc(100vh - 80px);
+  margin-top: 40px;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 13vw;
+  max-width: fit-content;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -552,7 +560,7 @@ header {
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   margin: 40px;
-  max-width: calc(100% - 80px);
+  max-width: fit-content;
   text-align: center;
   min-height: fit-content;
   display: flex;
@@ -646,7 +654,7 @@ header {
 
 
 .experience-link{
-  margin-top: 23px;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 

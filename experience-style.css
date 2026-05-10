@@ -6,7 +6,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,6 +15,9 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #0a0a1a;
+}
+a{
+  text-decoration: none;
 }
 
 /* Galaxy Background Video */
@@ -219,10 +222,10 @@ header {
 
 .timeline-marker {
   position: absolute;
-  left: -38px;
+  left: -39px;
   top: 30px;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: #72a1de;
   border: 3px solid white;
   border-radius: 50%;
@@ -435,7 +438,15 @@ header {
   font-weight: 600;
 }
 
-.project-content{
+hr{
+  position: relative;
+  z-index: 999;
+  top: 95.5vw;
+  margin-left: 23px;
+  width: 1175px;
+}
+
+.project-divison{
   background: rgba(15, 15, 30, 0.6);
   border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 40px;
@@ -452,4 +463,25 @@ header {
   display: flex;
   flex-direction: column;
   transition: 0.3s;
+}
+
+.project-division:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
+}
+
+.project-type{
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: white;
+  transition: 0.3s;
+}
+
+.project-type:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
 }

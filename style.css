@@ -282,7 +282,7 @@ header {
 
 .info-section {
   position: relative;
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -307,7 +307,7 @@ header {
   text-align: center;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-  min-height: calc(100vh - 80px);
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;

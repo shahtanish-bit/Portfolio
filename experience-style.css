@@ -137,8 +137,8 @@ header {
 }
 
 .socials a {
-  width: 35px;
-  height: 35px;
+  width: 38px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,6 +155,7 @@ header {
   background: #727fde;
   color: black;
   box-shadow: 0 0 15px #727fde67;
+  transform: translateY(-2.5px);
 }
 
 .experience-container {
@@ -438,23 +439,15 @@ header {
   font-weight: 600;
 }
 
-hr{
-  position: relative;
-  z-index: 999;
-  top: 95.5vw;
-  margin-left: 23px;
-  width: 1175px;
-}
-
-.project-divison{
+.project-division{
   background: rgba(15, 15, 30, 0.6);
   border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 40px;
-  padding-left: 95px;
-  padding-right: 95px;
+  padding-left: 30px;
+  padding-right: 30px;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-  margin-top: 60px;
+  margin-top: 50px;
   margin-left: 45px;
   margin-right: 45px;
   margin-bottom: 30px;
@@ -481,6 +474,53 @@ hr{
 }
 
 .project-type:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
+}
+
+.software-projects{
+  background: rgba(15, 15, 30, 0.6);
+  border: 2px solid rgba(114, 161, 222, 0.25);
+  border-radius: 40px;
+  padding-left: 40px;
+  padding-right: 50px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.software-projects:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+  border-color: rgba(114, 161, 222, 0.5);
+}
+
+.software-project-title{
+  background: rgba(15, 15, 30, 0.6);
+  border: 2px solid rgba(114, 161, 222, 0.25);
+  border-radius: 40px;
+  padding: 5px 30px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  margin-top: 35px;
+  margin-right: 45px;
+  margin-bottom: 30px;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+.software-project-title:hover{
   transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);

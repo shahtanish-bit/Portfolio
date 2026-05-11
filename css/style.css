@@ -9,7 +9,6 @@ body {
   color: #72a1de;
 }
 
-/* for the bg */
 .container {
   position: relative;
   width: 100%;
@@ -32,7 +31,6 @@ body {
   object-fit: cover;
 }
 
-/* for nav bar */
 header {
   position: fixed;
   top: 0;
@@ -145,7 +143,6 @@ header {
   transform: translateY(-2.5px);
 }
 
-/* bg black hole video */
 .blackhole-box {
   position: absolute;
   top: 0;
@@ -161,7 +158,6 @@ header {
   margin-top: -23.5%;
 }
 
-/* for intro part on website */
 .hero {
   position: relative;
   display: flex;
@@ -233,7 +229,6 @@ header {
   mix-blend-mode: lighten;
 }
 
-/* for scroll down animation */
 .scroll-down {
   height: 50px;
   width: 30px;
@@ -606,7 +601,6 @@ header {
   width: 1100px;
   text-align: center;
   height: fit-content;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }

@@ -20,7 +20,6 @@ a{
   text-decoration: none;
 }
 
-/* Galaxy Background Video */
 .back-vid {
   position: fixed;
   top: 50%;
@@ -34,7 +33,6 @@ a{
   z-index: -2;
 }
 
-/* Simple Overlay */
 .vibrant-overlay {
   position: fixed;
   top: 0;
@@ -46,7 +44,6 @@ a{
   pointer-events: none;
 }
 
-/* Header Styles */
 header {
   position: fixed;
   top: 0;
@@ -196,7 +193,6 @@ header {
   letter-spacing: 1px;
 }
 
-/* Timeline */
 .timeline {
   position: relative;
   padding-left: 50px;
@@ -375,12 +371,6 @@ header {
   transition: 0.3s;
 }
 
-.achievement:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-  border-color: rgba(114, 161, 222, 0.5);
-}
-
 .tag {
   width: fit-content;
   padding: 6px 14px;
@@ -515,8 +505,6 @@ header {
   margin-bottom: 30px;
   width: fit-content;
   height: fit-content;
-  display: flex;
-  flex-direction: column;
   transition: 0.3s;
 }
 

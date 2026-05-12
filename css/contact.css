@@ -158,26 +158,4 @@ header {
   transform: translateY(-2.5px);
 }
 
-.experience-container {
-  max-width: fit-content;
-  margin: 0 auto;
-  padding: 120px 20px 60px;
-  position: relative;
-  z-index: 1;
-}
 
-.experience-header {
-  text-align: center;
-  margin-bottom: 80px;
-  padding: 60px 40px;
-  background: rgba(15, 15, 30, 0.7);
-  backdrop-filter: blur(20px);
-  border-radius: 30px;
-  border: 2px solid rgba(114, 161, 222, 0.3);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
-}
-
-.header-icon {
-  font-size: 60px;
-  margin-bottom: 20px;
-}

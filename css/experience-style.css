@@ -1,3 +1,9 @@
+:root {
+  --accent: #72a1de;
+  --accent-alt: #727fde;
+  --transition: 0.2s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +22,17 @@ body {
   position: relative;
   background-color: #0a0a1a;
 }
+
+
+.card {
+  background: rgba(15, 15, 30, 0.6);
+  border: 2px solid rgba(114, 161, 222, 0.25);
+  border-radius: 40px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 8px 40px #00000080;
+}
+
+
 a{
   text-decoration: none;
 }
@@ -55,7 +72,7 @@ header {
   align-items: center;
   background: rgba(20, 20, 30, 0.85);
   backdrop-filter: blur(5px);
-  box-shadow: 0 0 20px #72a1de8d;
+  box-shadow: 0 0 20px rgba(114, 161, 222, 0.55);
   z-index: 1000;
 }
 
@@ -85,7 +102,7 @@ header {
 }
 
 .logo h1 span {
-  color: #72a1de;
+  color: var(--accent);
 }
 
 .nav-links {
@@ -97,7 +114,7 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px #727fde65;
+  box-shadow: 0 0 10px rgba(114, 127, 222, 0.4);
   transition: 0.3s;
 }
 
@@ -118,7 +135,7 @@ header {
 }
 
 .nav-links li a:hover {
-  color: #72a1de;
+  color: var(--accent);
   font-size: 17px;
   font-weight: 700;
   transform: translateY(5px);
@@ -149,9 +166,9 @@ header {
 }
 
 .socials a:hover {
-  background: #727fde;
+  background: var(--accent-alt);
   color: black;
-  box-shadow: 0 0 15px #727fde67;
+  box-shadow: 0 0 15px rgba(114, 127, 222, 0.4);
   transform: translateY(-2.5px);
 }
 
@@ -223,7 +240,7 @@ header {
   top: 30px;
   width: 18px;
   height: 18px;
-  background: #72a1de;
+  background: var(--accent);
   border: 3px solid white;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(114, 161, 222, 0.5);
@@ -304,14 +321,10 @@ header {
   margin-right: 100px;
 }
 
+
 .event-content{
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
   padding-left: 95px;
   padding-right: 95px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   margin: 30px 45px;
   width: fit-content;
   height: fit-content;
@@ -344,7 +357,7 @@ header {
 }
 
 .event-location i {
-  color: #72a1de;
+  color: var(--accent);
 }
 
 .event-description{
@@ -390,16 +403,11 @@ header {
   border-color: rgba(114, 161, 222, 0.5);
 }
 
+
+
+
 .languages{
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
-  padding-top: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  padding: 30px 60px;
   margin: 30px 60px;
   width: fit-content;
   height: fit-content;
@@ -429,18 +437,12 @@ header {
   font-weight: 600;
 }
 
+
+
 .project-division{
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
   padding-left: 30px;
   padding-right: 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
-  margin-left: 45px;
-  margin-right: 45px;
-  margin-bottom: 30px;
+  margin: 50px 45px 30px;
   width: fit-content;
   height: fit-content;
   display: flex;
@@ -460,23 +462,12 @@ header {
   margin-top: 15px;
   margin-bottom: 15px;
   color: white;
-  transition: 0.3s;
 }
 
-.project-type:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-  border-color: rgba(114, 161, 222, 0.5);
-}
+
 
 .software-projects{
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
-  padding-left: 40px;
-  padding-right: 50px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+  padding: 30px 40px;
   margin-top: 30px;
   margin-left: 120px;
   margin-bottom: 30px;
@@ -493,13 +484,10 @@ header {
   border-color: rgba(114, 161, 222, 0.5);
 }
 
+
+/* TOO DOOO */
 .software-project-title{
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
   padding: 5px 30px;
-  backdrop-filter: blur(5px);
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
   margin-top: 35px;
   margin-right: 45px;
   margin-bottom: 30px;

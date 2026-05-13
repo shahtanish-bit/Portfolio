@@ -1,3 +1,16 @@
+:root {
+  --accent: #72a1de;
+  --accent-alt: #727fde;
+  --radius: 25px;
+  --radius-sm: 12px;
+  --transition: 0.2s ease;
+  --bg-dark: #0a0a1a;
+  --bg-card: rgba(15, 15, 30, 0.6);
+  --bg-input: #14192dcc;
+  --border-accent: rgba(114, 161, 222, 0.25);
+  --border-accent-hover: var(--accent);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,38 +27,13 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   position: relative;
-  background-color: #0a0a1a;
+  background-color: var(--bg-dark);
 }
-a{
+
+a {
   text-decoration: none;
 }
-/* 
-.gradiant {
-  background: linear-gradient(
-    to left,
-    #008baa,
-    #7e42a7,
-    #6600c5,
-    #6070fd,
-    #2a46ff,
-    #0099ff,
-    #008baa
-  );
-  background-size: 200%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate-gradiant 2.5s linear infinite;
-}
 
-@keyframes animate-gradiant {
-  to {
-    background-position: 200%;
-  }
-} */
-
-
-/* Galaxy Background Video */
 .back-vid {
   position: fixed;
   top: 50%;
@@ -59,7 +47,6 @@ a{
   z-index: -2;
 }
 
-/* Simple Overlay */
 .vibrant-overlay {
   position: fixed;
   top: 0;
@@ -71,7 +58,6 @@ a{
   pointer-events: none;
 }
 
-/* Header Styles */
 header {
   position: fixed;
   top: 0;
@@ -83,7 +69,7 @@ header {
   align-items: center;
   background: rgba(20, 20, 30, 0.85);
   backdrop-filter: blur(5px);
-  box-shadow: 0 0 20px #72a1de8d;
+  box-shadow: 0 0 20px rgba(114, 161, 222, 0.55);
   z-index: 1000;
 }
 
@@ -108,13 +94,12 @@ header {
   height: auto;
 }
 
-.logo h1 {
+.logo span {
   font-size: 22px;
+  color: var(--accent);
+  font-weight: 550;
 }
 
-.logo h1 span {
-  color: #72a1de;
-}
 
 .nav-links {
   display: flex;
@@ -125,11 +110,11 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px #727fde65;
-  transition: 0.3s;
+  box-shadow: 0 0 10px rgba(114, 127, 222, 0.4);
+  transition: var(--transition);
 }
 
-.nav-links:hover{
+.nav-links:hover {
   padding: 18px 30px;
   transform: translateY(6px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
@@ -137,21 +122,15 @@ header {
 }
 
 .nav-links li a {
-  text-decoration: none;
   font-size: 16px;
   font-weight: 700;
   padding: 0 10px;
   color: white;
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 .nav-links li a:hover {
-  color: #72a1de;
-  font-size: 17px;
-  font-weight: 700;
-  transform: translateY(5px);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-  border-color: rgba(114, 161, 222, 0.5);
+  color: var(--accent);
 }
 
 .socials {
@@ -169,20 +148,18 @@ header {
   justify-content: center;
   font-size: 18px;
   color: lightgray;
-  text-decoration: none;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  transition: 0.3s;
+  transition: var(--transition);
 }
 
 .socials a:hover {
-  background: #727fde;
+  background: var(--accent-alt);
   color: black;
-  box-shadow: 0 0 15px #727fde67;
+  box-shadow: 0 0 15px rgba(114, 127, 222, 0.4);
   transform: translateY(-2.5px);
 }
-
 
 .contact-section {
   position: relative;
@@ -204,7 +181,7 @@ header {
   margin-bottom: 60px;
 }
 
-.contact-header h1{
+.contact-header h1 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -212,7 +189,7 @@ header {
 
 .contact-header p {
   font-size: 18px;
-  color: #ffffffb3;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .contact-content {
@@ -234,21 +211,21 @@ header {
   gap: 20px;
   padding: 25px;
   background: #0f0f1e99;
-  border: 2px solid #72a1de40;
-  border-radius: 20px;
+  border: 2px solid rgba(114, 161, 222, 0.25);
+  border-radius: var(--radius);
   backdrop-filter: blur(5px);
-  transition: 0.26s;
+  transition: var(--transition);
 }
 
-.info-item:hover{
-  border-color: #72a1de;
-  box-shadow: 0 0 20px #72a1de4d;
-  transform: translateY(-5px);
+.info-item:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 10px rgba(114, 161, 222, 0.3);
+  transform: translateY(-3px);
 }
 
 .info-item i {
   font-size: 28px;
-  color: #72a1de;
+  color: var(--accent);
   min-width: 28px;
 }
 
@@ -258,20 +235,16 @@ header {
   color: white;
 }
 
-.info-item p{
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.info-item p a{
+.info-item p,
+.info-item p a {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .contact-form {
-  background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.250);
-  border-radius: 30px;
+  background: var(--bg-card);
+  border: 2px solid var(--border-accent);
+  border-radius: var(--radius);
   padding: 40px;
   backdrop-filter: blur(5px);
 }
@@ -285,7 +258,7 @@ header {
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #72a1de;
+  color: var(--accent);
 }
 
 .form-group input,
@@ -294,11 +267,11 @@ header {
   padding: 15px 20px;
   font-size: 15px;
   font-family: inherit;
-  background: #14192dcc;
+  background: var(--bg-input);
   border: 1px solid rgba(114, 161, 222, 0.3);
-  border-radius: 12px;
+  border-radius: var(--radius-sm);
   color: white;
-  transition: 0.25s;
+  transition: var(--transition);
   outline: none;
   resize: none;
 }
@@ -310,13 +283,11 @@ header {
 
 .form-group input:focus,
 .form-group textarea:focus {
-  border-color: #72a1de;
+  border-color: var(--accent);
   box-shadow: 0 0 15px rgba(114, 161, 222, 0.3);
 }
 
-
-.from-group textarea {
-  resize: vertical;
+.form-group textarea {
   min-height: 150px;
 }
 
@@ -330,20 +301,19 @@ header {
   font-weight: 600;
   color: white;
   padding: 16px 40px;
-  border: 2px solid #727fde;
-  border-radius: 15px;
+  border: 2px solid var(--accent-alt);
+  border-radius: var(--radius-sm);
   background: rgba(114, 127, 222, 0.2);
   box-shadow: 0 0 10px rgba(114, 127, 222, 0.3);
   cursor: pointer;
-  transition: 0.2s ease-out;
+  transition: var(--transition);
   font-family: inherit;
 }
 
 .submit-btn:hover {
-  background: #727fde;
-  border-color: #727fde;
+  background: var(--accent-alt);
   box-shadow: 0 0 20px rgba(114, 127, 222, 0.6);
-  transform: translateY(-3px);
+  transform: translateY(-5px);
 }
 
 .submit-btn i {
@@ -354,11 +324,11 @@ header {
   .contact-content {
     grid-template-columns: 1fr;
   }
-  
+
   .contact-header h1 {
     font-size: 36px;
   }
-  
+
   .contact-form {
     padding: 30px 25px;
   }

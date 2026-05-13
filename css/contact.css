@@ -263,6 +263,11 @@ header {
   color: rgba(255, 255, 255, 0.7);
 }
 
+.info-item p a{
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 .contact-form {
   background: rgba(15, 15, 30, 0.6);
   border: 2px solid rgba(114, 161, 222, 0.250);
@@ -295,6 +300,7 @@ header {
   color: white;
   transition: 0.25s;
   outline: none;
+  resize: none;
 }
 
 .form-group input::placeholder,
@@ -327,16 +333,16 @@ header {
   border: 2px solid #727fde;
   border-radius: 15px;
   background: rgba(114, 127, 222, 0.2);
-  box-shadow: 0 0 20px rgba(114, 127, 222, 0.3);
+  box-shadow: 0 0 10px rgba(114, 127, 222, 0.3);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.2s ease-out;
   font-family: inherit;
 }
 
 .submit-btn:hover {
   background: #727fde;
   border-color: #727fde;
-  box-shadow: 0 0 30px rgba(114, 127, 222, 0.6);
+  box-shadow: 0 0 20px rgba(114, 127, 222, 0.6);
   transform: translateY(-3px);
 }
 

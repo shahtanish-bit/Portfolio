@@ -501,3 +501,125 @@ header {
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
+
+@media (max-width: 1200px) {
+  .timeline-item,
+  .experience-card {
+    width: 90vw;
+  }
+
+  .experience-container {
+    padding: 100px 20px 60px;
+  }
+
+  .event-content {
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 20px 15px;
+  }
+
+  .languages {
+    padding: 25px 35px;
+    margin: 20px 25px;
+  }
+
+  .software-projects {
+    margin-left: 40px;
+  }
+
+  .event-description p {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-marker {
+    left: -28px;
+  }
+
+  .timeline-item,
+  .experience-card {
+    width: calc(100vw - 60px);
+  }
+
+  .experience-header {
+    padding: 35px 20px;
+    margin-bottom: 50px;
+  }
+
+  .experience-header h1 {
+    font-size: 30px;
+  }
+
+  .event-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 15px 0;
+  }
+
+  .event-description p {
+    margin-left: 0;
+  }
+
+  .languages {
+    padding: 20px 25px;
+    margin: 15px 0;
+  }
+
+  .event-achievements {
+    padding-right: 0;
+  }
+
+  .project-division {
+    margin: 25px 0 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .software-projects {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .software-project-title {
+    margin-right: 0;
+  }
+
+  .event-date {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 50px;
+  }
+
+  header .nav-links,
+  header .socials {
+    display: none;
+  }
+
+  .experience-header h1 {
+    font-size: 24px;
+  }
+
+  .event-title,
+  .project-type {
+    font-size: 20px;
+  }
+
+  .experience-card {
+    padding: 20px;
+  }
+}

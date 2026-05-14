@@ -321,15 +321,44 @@ header {
 }
 
 @media (max-width: 768px) {
-  .contact-content {
-    grid-template-columns: 1fr;
+  .contact-section {
+    padding: 100px 20px 40px;
   }
 
   .contact-header h1 {
-    font-size: 36px;
+    font-size: 32px;
+  }
+
+  .contact-header p {
+    font-size: 16px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .contact-form {
-    padding: 30px 25px;
+    padding: 25px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 50px;
+  }
+
+  header .nav-links,
+  header .socials {
+    display: none;
+  }
+
+  .contact-header h1 {
+    font-size: 26px;
+  }
+
+  .info-item {
+    padding: 18px;
+    gap: 14px;
   }
 }

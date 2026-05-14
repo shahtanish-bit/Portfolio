@@ -168,7 +168,7 @@ header {
 .blackhole-box video {
   z-index: -1;
   width: 100%;
-  /* pulling video up to bring it below navbar */
+  /* pulling video up so it shows below navbar */
   margin-top: -23.5%;
 }
 
@@ -310,7 +310,7 @@ header {
   margin-bottom: 0;
 }
 
-.tech-card {
+.tech-section {
   padding: 10px 70px;
   margin: 40px;
   max-width: fit-content;
@@ -390,7 +390,7 @@ header {
   transform: translateY(-3px);
 }
 
-.flexibility-card {
+.section-flexibility {
   padding: 25px 70px;
   margin-top: 40px;
   margin-right: 40px;
@@ -451,7 +451,7 @@ header {
   object-fit: cover;
 }
 
-.passion-card {
+.passion-section {
   padding: 80px 60px;
   margin: 40px;
   max-width: fit-content;
@@ -484,7 +484,7 @@ header {
   text-align: center;
 }
 
-.experience-card {
+.experience-section {
   display: flex;
   align-items: center;
   padding: 30px 60px 0;
@@ -546,11 +546,6 @@ header {
   border-color: rgba(114, 161, 222, 0.5);
 }
 
-@media (max-width: 768px) {
-  .flex-video {
-    height: 300px;
-  }
-}
 
 
 .gradiant {
@@ -574,6 +569,12 @@ header {
 @keyframes animate-gradiant {
   to {
     background-position: 200%;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-video {
+    height: 300px;
   }
 }
 
@@ -609,10 +610,55 @@ header {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    gap: 40px;
+  }
+
+  .profile-card {
+    padding: 20px 20px;
+    min-height: unset;
+  }
+
+  .tech-section {
+    padding: 10px 20px;
+    margin: 20px;
+  }
+
+  .tech-grid {
+    gap: 20px;
+  }
+
+  .experience-section {
+    width: 90vw;
+    padding: 25px 20px 0;
+    margin: 20px;
+  }
+
+  .passion-section {
+    padding: 40px 20px;
+    margin: 20px;
+  }
+
+  .section-flexibility {
+    padding: 25px 20px;
+    margin: 20px 20px 13vw;
+  }
+
+  .intro-title {
+    font-size: 32px;
+  }
+
+  .tech-title,
+  .passion-title,
+  .flex-title,
+  .experience-title {
+    font-size: 30px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   header {
-    position: fixed;
     height: 50px;
   }
 
@@ -638,25 +684,38 @@ header {
 
   .hero-info {
     bottom: 50%;
-  }
-
-  .hero-info h2 {
-    font-size: 30px;
-    line-height: 32px;
-    margin-bottom: 30px;
+    left: 5%;
+    right: 5%;
   }
 
   .hero-info h1 {
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 44px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .hero-info h2 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+    max-width: 100%;
   }
 
   .hero-vid-box video {
     display: none;
   }
 
+  .flex-video {
+    height: 250px;
+  }
+
   .flex-video video {
     width: 100%;
+  }
+
+  .experience-section {
+    width: 90vw;
   }
 }

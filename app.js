@@ -1,16 +1,17 @@
-const video1 = document.getElementById('projectVideo1')
-const video2 = document.getElementById('projectVideo2')
-const video3 = document.getElementById('projectVideo3')
+const menuIcon = document.querySelector('.menu-icon');
+const closeIcon = document.querySelector('.close-icon');
+const sidebar = document.querySelector('.sidebar');
 
-const videoList = [video1, video2, video3];
+menuIcon.addEventListener('click', () => {
+    sidebar.classList.add('open');
+});
 
-videoList.forEach (function(video){
-    video.addEventListener("mouseover", function(){
-        video.play()
+closeIcon.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+});
 
-    })
-    video.addEventListener("mouseout", function(){
-    video.pause();
-    
-})
-})
+sidebar.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+    });
+});

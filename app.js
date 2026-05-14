@@ -15,3 +15,15 @@ sidebar.querySelectorAll('a').forEach(link => {
         sidebar.classList.remove('open');
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('video').forEach(video => {
+    video.muted = true;
+    video.play().catch(() => {
+      document.addEventListener('touchstart', () => {
+        video.play();
+      }, { once: true });
+    });
+  });
+});

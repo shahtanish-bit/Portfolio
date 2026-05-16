@@ -15,6 +15,7 @@ A modern, space-themed portfolio website showcasing my projects, skills, and jou
 - HTML5
 - CSS3
 - JavaScript
+- used claude for some CSS
 - Font Awesome Icons
 
 ## 📂 Project Structure

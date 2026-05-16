@@ -445,6 +445,7 @@ header {
   margin: 50px 45px 30px;
   width: fit-content;
   height: fit-content;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
@@ -487,10 +488,11 @@ header {
 
 
 .software-project-title{
-  padding: 5px 30px;
+  padding: 8px 30px;
   margin-top: 35px;
   margin-right: 45px;
   margin-bottom: 30px;
+  border-radius: 25px;
   width: fit-content;
   height: fit-content;
   transition: 0.3s;
@@ -513,59 +515,59 @@ header {
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 260px;
-    height: 100vh;
-    background: rgba(10, 10, 26, 0.97);
-    backdrop-filter: blur(10px);
-    border-left: 1px solid rgba(114, 161, 222, 0.2);
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding: 30px 25px;
-    transition: right 0.3s ease;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 260px;
+  height: 100vh;
+  background: rgba(10, 10, 26, 0.97);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(114, 161, 222, 0.2);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 30px 25px;
+  transition: right 0.3s ease;
 }
 
 .sidebar.open {
-    right: 0;
+  right: 0;
 }
 
 .close-icon {
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    align-self: flex-end;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  align-self: flex-end;
 }
 
 .sidebar .nav-links {
-    flex-direction: column;
-    background: none;
-    border: none;
-    box-shadow: none;
-    padding: 0;
-    gap: 5px;
+  flex-direction: column;
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  gap: 5px;
 }
 
 .sidebar .nav-links:hover {
-    transform: none;
-    padding: 0;
-    box-shadow: none;
-    border-color: transparent;
+  transform: none;
+  padding: 0;
+  box-shadow: none;
+  border-color: transparent;
 }
 
 .sidebar .nav-links li a {
-    font-size: 17px;
-    padding: 10px 0;
-    display: block;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  font-size: 17px;
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .sidebar .socials {
-    position: static;
-    justify-content: flex-start;
+  position: static;
+  justify-content: flex-start;
 }
 
 

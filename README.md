@@ -15,7 +15,6 @@ A modern, space-themed portfolio website showcasing my projects, skills, and jou
 - HTML5
 - CSS3
 - JavaScript
-- used claude for some basic CSS improvement and suggestions
 - Font Awesome Icons
 
 ## 📂 Project Structure
@@ -33,8 +32,7 @@ A modern, space-themed portfolio website showcasing my projects, skills, and jou
 
 This project was developed with assistance from AI tools (Kiro AI Assistant) for:
 - Code structure and organization
-- CSS styling and animations
-- Responsive design implementation
+- CSS styling
 - Bug fixing and optimization
 - README documentation
 

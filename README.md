@@ -20,11 +20,9 @@ A modern, space-themed portfolio website showcasing my projects, skills, and jou
 ## 📂 Project Structure
 
 - `index.html` - Main landing page
-- `projects.html` - Projects showcase page
 - `experience.html` - Timeline of experiences
 - `contact.html` - Contact form
 - `style.css` - Main stylesheet
-- `projects-style.css` - Projects page styling
 - `experience-style.css` - Experience page styling
 - `contact.css` - Contact page styling
 

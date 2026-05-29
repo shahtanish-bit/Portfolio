@@ -1,52 +1,50 @@
 # My Portfolio Website
 
-A modern, space-themed portfolio website showcasing my projects, skills, and journey in tech.
+This is my portfolio website which lists my projects, experience and projects. You can also contact me here if you'd like to work with me.
 
-## 🚀 Features
+## Features
 
-- **Responsive Design** - Works seamlessly across all devices
-- **Space Theme** - Galaxy background with smooth animations
-- **Project Showcase** - Dedicated projects page with video previews
-- **Experience Timeline** - Hackathons, events, and learning journey
-- **Contact Form** - Easy way to get in touch
+- **Responsive Design** - It is disgned to work on almost every device.
+- **Project Showcase** - The projects are listed in a organised way and described briefly.
+- **Experience Timeline** - Hackathons, events, and my learning journey is showcased in a timeline like structure to make it more visually appealing.
+- **Contact Form** - It is easy to in touch with me through the contact form on this website.
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
 - Font Awesome Icons
 
-## 📂 Project Structure
+## Project Structure
 
 - `index.html` - Main landing page
 - `experience.html` - Timeline of experiences
 - `contact.html` - Contact form
-- `style.css` - Main stylesheet
-- `experience-style.css` - Experience page styling
-- `contact.css` - Contact page styling
+- `CSS/style.css` - Main stylesheet
+- `CSS/experience-style.css` - Experience page styling
+- `CSS/contact.css` - Contact page styling
 
-## 🤖 AI Usage Declaration
+## AI Usage in this project
 
-This project was developed with assistance from AI tools (Kiro AI Assistant) for:
-- Code structure and organization
-- CSS styling
-- Bug fixing and optimization
-- README documentation
+This project was made with some help and assistance from AI tools for things like:
 
-The core design decisions, content, project descriptions, and creative direction are my own work.
+- Ideas for styling the website
+- Fixing the bugs and optimizing the code
 
-## 📧 Contact
+The main design(UI/UX), text content and project descriptions are my own work.
+
+## Contact
 
 - **Email:** shahtanish0165@gmail.com
 - **GitHub:** [shahtanish-bit](https://github.com/)
 - **LinkedIn:** 
 - **Instagram:** [@tanish_shah.100](https://www.instagram.com/tanish_shah.100)
 
-## 📄 License
+## License
 
 This project is open source and available for personal and educational use.
 
 ---
 
-**Built with 💙 by Tansih**
+**Built with 💙 by Tanish Sah**

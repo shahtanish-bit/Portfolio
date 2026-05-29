@@ -38,7 +38,6 @@ The main design(UI/UX), text content and project descriptions are my own work.
 
 - **Email:** shahtanish0165@gmail.com
 - **GitHub:** [shahtanish-bit](https://github.com/)
-- **LinkedIn:** 
 - **Instagram:** [@tanish_shah.100](https://www.instagram.com/tanish_shah.100)
 
 ## License

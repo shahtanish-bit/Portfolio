@@ -619,13 +619,15 @@ header {
 .gradiant {
   background: linear-gradient(
     to left,
-    #008baa,
-    #7e42a7,
-    #6600c5,
-    #6070fd,
-    #2a46ff,
-    #0099ff,
-    #008baa
+    #afb3ff,
+    #868cff,
+    #6e75ff,
+    #444dff,
+    #434cff,
+    #444dff,
+    #6e75ff,
+    #868cff,
+    #afb3ff
   );
   background-size: 200%;
   background-clip: text;

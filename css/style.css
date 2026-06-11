@@ -8,20 +8,30 @@ html {
   scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Monocraft';
+    src: url('Monocraft.woff2') format('woff2'),
+        url('Monocraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: var(--accent);
+  /* background-color: #000515; */
 }
-
+/* 
 .card {
   background: rgba(15, 15, 30, 0.6);
   border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 40px;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px #00000080;
-}
+} */
 
 .container {
   position: relative;
@@ -30,7 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 100px;
+  gap: 70px;
   background-color: #00186038;
 }
 
@@ -176,9 +186,10 @@ header {
   position: relative;
   display: flex;
   width: 100%;
-  height: 95vh;
+  height: 80vh;
   align-items: center;
   justify-content: space-between;
+
 }
 
 .hero-info {
@@ -243,6 +254,16 @@ header {
   mix-blend-mode: lighten;
 }
 
+
+.line{
+  width: 92%;
+  height: 3.5px;
+  background-color: rgb(169, 122, 255);
+  border: 0.1px solid rgb(169, 122, 255);
+  border-radius: 30px;
+}
+
+
 .info-section {
   position: relative;
   min-height: fit-content;
@@ -255,6 +276,8 @@ header {
   padding-right: 10px;
   background: transparent;
   z-index: 10;
+  background-color: #0c0c44;
+  width: 100%;
 }
 
 .info-container {
@@ -276,11 +299,21 @@ header {
   width: 180px;
   height: 195px;
   margin: 0 auto 30px;
-  border-radius: 35px;
+  border-radius: 28px;
   overflow: hidden;
-  background: #1e1e3280;
+  background: #00186064;
   border: 3px solid rgba(114, 161, 222, 0.35);
   box-shadow: 0 0 30px rgba(114, 161, 222, 0.25);
+}
+
+.pfp-back-vid{
+  position: absolute;
+  z-index: -1;
+  /* mix-blend-mode: lighten; */
+  width: 180px;
+  height: 195px;
+  border-radius: 28px;
+  object-fit: cover;
 }
 
 .profile-image img {
@@ -290,6 +323,7 @@ header {
 }
 
 .intro-title {
+  font-family: 'Monocraft', monospace;
   font-size: 48px;
   font-weight: 700;
   margin-top: 10px;
@@ -298,6 +332,7 @@ header {
 }
 
 .intro-text {
+  font-family: 'Monocraft', monospace;
   font-size: 17px;
   line-height: 32px;
   color: #ffffffb3;
@@ -391,17 +426,18 @@ header {
 }
 
 .section-flexibility {
-  padding: 25px 70px;
+  padding: 25px 70px 50px;
   margin-top: 40px;
   margin-right: 40px;
   margin-left: 40px;
   /*the margin given below is given so that the user can scroll a lil more to read the section properly*/
   margin-bottom: 13vw;
-  max-width: fit-content;
+  width: 100%;
   min-height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-color: #0c0c44;
 }
 
 .flex-title {
@@ -429,7 +465,7 @@ header {
 
 .flex-paragraph {
   font-size: 17px;
-  line-height: 32px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   max-width: 915px;
@@ -487,13 +523,14 @@ header {
 .experience-section {
   display: flex;
   align-items: center;
-  padding: 30px 60px 0;
+  padding: 30px 0 0;
   margin: 40px;
-  width: 1100px;
+  width: 100%;
   text-align: center;
   height: fit-content;
   flex-direction: column;
   justify-content: center;
+  background-color: #0c0c44;
 }
 
 .experience-title {
@@ -513,10 +550,12 @@ header {
 }
 
 .experience-desc {
+  font-family: 'Monocraft', monospace;
   font-size: 17px;
   line-height: 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffffb3;
   text-align: left;
+  padding: 0 150px;
   margin-top: 35px;
   margin-bottom: 5px;
 }

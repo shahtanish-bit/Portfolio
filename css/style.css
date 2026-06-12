@@ -352,7 +352,7 @@ header {
   /* margin-top: -65px;
   margin-bottom: 25px; */
   margin-top: -43px;
-  color: #fff8bd;
+  color: #a6c7e0;
   text-align: center;
   position: relative;
   z-index: 0;
@@ -380,7 +380,7 @@ header {
   z-index: 2; /* in front of photo */
   -webkit-text-stroke-width: 2.5px;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #fff8bd;
+  -webkit-text-stroke-color: #a6c7e0;
 }
 
 

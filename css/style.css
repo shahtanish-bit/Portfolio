@@ -25,14 +25,14 @@ body {
   color: var(--accent);
   /* background-color: #000515; */
 }
-/* 
+
 .card {
   background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
+  /* border: 2px solid rgba(114, 161, 222, 0.25); */
   border-radius: 40px;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px #00000080;
-} */
+}
 
 .container {
   position: relative;
@@ -339,25 +339,49 @@ header {
   font-family: 'Monocraft', monospace;
   font-size: 48px;
   font-weight: 700;
+  text-shadow: 0 5px 18px #00d4ff99;
   margin-top: 10px;
   margin-bottom: 60px;
   color: white;
 
 }
 
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P";
+  font-weight: 400;
+  font-style: normal;
+}
+
 .intro-title-name{
-  font-family: Black Ops One;
-  font-size: 62px;
-  font-weight: 900;
+  left: -70px;
+  font-family: "Press Start 2P";
+  font-size: 54px;
+  font-weight: 400;
+  text-shadow: 0 8px 25px #00d4ff99;
   /* margin-top: -65px;
   margin-bottom: 25px; */
-  margin-top: -43px;
-  color: #a6c7e0;
+  margin-top: -32px;
+  color: #ffffff;
   text-align: center;
   position: relative;
   z-index: 0;
 }
 
+.intro-title-name-outline {
+  font-family: "Press Start 2P";
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: -70px;
+  right: 0;
+  z-index: 2; /* in front of photo */
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #ffffff;
+}
 /* .intro-title-name::after{
   content: "Tanish";
   position: absolute;
@@ -367,21 +391,6 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #ff01018a;
 } */
-
-.intro-title-name-outline {
-  font-family: Black Ops One;
-  font-size: 62px;
-  font-weight: 900;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 2; /* in front of photo */
-  -webkit-text-stroke-width: 2.5px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #a6c7e0;
-}
 
 
 
@@ -402,7 +411,7 @@ header {
 .tech-section {
   padding: 10px 70px;
   margin: 40px;
-  max-width: fit-content;
+  width: 87%;
   text-align: center;
   min-height: fit-content;
   display: flex;
@@ -508,17 +517,16 @@ header {
 .flex-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   max-width: 1100px;
   align-items: center;
 }
 
 .flex-paragraph {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 18px;
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
-  max-width: 915px;
+  max-width: 870px;
 }
 
 .flex-video {
@@ -540,7 +548,7 @@ header {
 .passion-section {
   padding: 80px 60px;
   margin: 40px;
-  max-width: fit-content;
+  width: 88%;
   text-align: center;
   min-height: fit-content;
   display: flex;

@@ -1,13 +1,22 @@
 :root {
-  --accent: #72a1de;
-  --accent-alt: #727fde;
-  --transition: 0.2s ease;
+  --blue: #72a1de;
+  --blue-purple: #727fde;
+  --speed: 0.2s ease;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+
+/* this is here cuz something is causing default zoom on the website when its opened on mobile so this code prevents it (trust me this issue ruiend my weekend) */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+/* this was suppose to make text look like minecraft text but it didnt idk why and i am too tired to care for it soo*/
 @font-face {
   font-family: 'Monocraft';
   src: url('Monocraft.woff2') format('woff2'),
@@ -22,7 +31,7 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
-  color: var(--accent);
+  color: var(--blue);
   /* background-color: #000515; */
 }
 
@@ -45,18 +54,21 @@ body {
   background-color: #00186038;
 }
 
+
 .back-vid {
   position: fixed;
   right: 0;
   bottom: 0;
   z-index: -1;
   mix-blend-mode: lighten;
+  width: 100%;   
   max-width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 header {
+  box-sizing: border-box; 
   position: fixed;
   top: 0;
   left: 0;
@@ -98,7 +110,7 @@ header {
 }
 
 .logo h1 span {
-  color: var(--accent);
+  color: var(--blue);
 }
 
 .nav-links {
@@ -131,7 +143,7 @@ header {
 }
 
 .nav-links li a:hover {
-  color: var(--accent);
+  color: var(--blue);
   font-size: 17px;
   font-weight: 700;
   transform: translateY(5px);
@@ -162,15 +174,17 @@ header {
 }
 
 .socials a:hover {
-  background: var(--accent-alt);
+  background: var(--blue-purple);
   color: black;
   box-shadow: 0 0 15px rgba(114, 127, 222, 0.4);
   transform: translateY(-2.5px);
 }
 
 .blackhole-box {
+  overflow: hidden;
   position: absolute;
   top: 0;
+  max-width: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -180,6 +194,7 @@ header {
 .blackhole-box video {
   z-index: -1;
   width: 100%;
+  max-width: 100%;
   /* pulling video up so it shows below navbar */
   margin-top: -23.5%;
 }
@@ -200,7 +215,7 @@ header {
 }
 
 .hero-info-title {
-  color: var(--accent-alt);
+  color: var(--blue-purple);
   padding: 8px 5px;
   border: 1px solid rgba(114, 127, 222, 0.47);
   width: 240px;
@@ -245,18 +260,79 @@ header {
   border-color: rgba(114, 161, 222, 0.5);
 }
 
+
+
+
+
+
+/* the cooolll terminal animation u saw oon the home page, yeah its styling is done by none other than the code below (its inspired, like i saw it on one of my friends portfolio and it was sooo cooolll and i was like i need to do this so yeah the idea is from there but the code is mine)*/
+
 .hero-vid-box {
   position: absolute;
   right: 3%;
-  mix-blend-mode: lighten;
 }
 
-.hero-vid-box video {
-  height: 550px;
-  mix-blend-mode: lighten;
+.code-block {
+  width: 340px;
+  background: rgba(8, 8, 30, 0.85);
+  border: 1px solid rgba(114, 161, 222, 0.35);
+  border-radius: 12px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(114, 161, 222, 0.15);
+  overflow: hidden;
 }
 
+.code-titlebar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 14px;
+  background: rgba(114, 161, 222, 0.07);
+  border-bottom: 1px solid rgba(114, 161, 222, 0.15);
+}
 
+.dot { width: 10px; height: 10px; border-radius: 50%; }
+.dot.red    { background: #ff0d00; }
+.dot.yellow { background: #ffae00; }
+.dot.green  { background: #00ff26; }
+
+.code-filename {
+  margin-left: 8px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  font-family: monospace;
+}
+
+.code-body {
+  padding: 14px 16px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 22px;
+  min-height: 160px;
+}
+
+.code-line { display: flex; gap: 10px; }
+.ln  { color: rgba(255,255,255,0.2); user-select: none; min-width: 16px; text-align: right; }
+.kw  { color: #c792ea; }
+.fn  { color: #82aaff; }
+.str { color: #c3e88d; }
+.op  { color: #89ddff; }
+.cm  { color: rgba(255,255,255,0.3); }
+
+.cursor {
+  display: inline-block;
+  width: 2px; height: 14px;
+  background: #72a1de;
+  vertical-align: middle;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+
+
+
+/* the purple line u see aftr every section is cuz of this */
 .line{
   width: 92%;
   height: 3.5px;
@@ -357,8 +433,6 @@ header {
   font-size: 54px;
   font-weight: 400;
   text-shadow: 0 8px 25px #00d4ff99;
-  /* margin-top: -65px;
-  margin-bottom: 25px; */
   margin-top: -32px;
   color: #ffffff;
   text-align: center;
@@ -366,6 +440,8 @@ header {
   z-index: 0;
 }
 
+
+/* it adds a outline on my name so it looks like the text is behind my image and its outline is visible(trust me it was so frustrating to code this like ahhhh!!! ohh myy gooodddd) */
 .intro-title-name-outline {
   font-family: "Press Start 2P";
   font-size: 54px;
@@ -380,15 +456,7 @@ header {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-color: #ffffff;
 }
-/* .intro-title-name::after{
-  content: "Tanish";
-  position: absolute;
-  inset: 0 0 0 0;
-  z-index: 3;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-color: #ff01018a;
-} */
+
 
 
 
@@ -452,7 +520,7 @@ header {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 15px;
-  color: var(--accent);
+  color: var(--blue);
   text-align: center;
 }
 
@@ -481,7 +549,7 @@ header {
   font-size: 15px;
   font-weight: 500;
   background: rgba(114, 161, 222, 0.3);
-  border-color: var(--accent);
+  border-color: var(--blue);
   box-shadow: 0 0 15px rgba(114, 161, 222, 0.4);
 }
 
@@ -640,7 +708,7 @@ header {
 }
 
 
-
+/* this is the for the icon which will be used on mobiles for navigations cuz my navbar is too bigfor it 😼*/
 .menu-icon {
     display: none;
     font-size: 26px;
@@ -708,7 +776,7 @@ header {
 
 
 
-
+/* the gradient u saw on my name in the first section was cuz of this */
 .gradiant {
   background: linear-gradient(
     to left,
@@ -735,6 +803,7 @@ header {
   }
 }
 
+/* andd now starts the most frustrating part , making the code responsivee, fixing the error which added zoom whas easier then doing this like whyyy the heckk is it so frustratingg*/
 @media (max-width: 768px) {
   .flex-video {
     height: 300px;
@@ -757,6 +826,7 @@ header {
 }
 
 
+
 @media screen and (max-width: 1200px) {
   .blackhole-box video {
     margin-top: -20%;
@@ -772,6 +842,7 @@ header {
     max-width: 300px;
   }
 }
+
 
 @media screen and (max-width: 1024px) {
 
@@ -826,7 +897,7 @@ header {
   }
 
   .experience-section {
-    width: fit-content;
+    width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
   }
@@ -838,7 +909,8 @@ header {
 
   .section-flexibility {
     padding: 25px 20px;
-    margin: 20px 20px 13vw;
+    width: calc(100% - 40px);
+    margin: 20px auto 13vw;
   }
 
   .intro-title {
@@ -871,7 +943,6 @@ header {
     font-size: 35px;
   }
 }
-
 
 @media screen and (max-width: 820px) {
 
@@ -907,7 +978,7 @@ header {
   }
 
   .experience-section {
-    width: fit-content;
+    width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
   }
@@ -919,7 +990,8 @@ header {
 
   .section-flexibility {
     padding: 25px 20px;
-    margin: 20px 20px 13vw;
+    width: calc(100% - 40px);
+    margin: 20px auto 13vw;
   }
 
   .intro-title {
@@ -977,7 +1049,7 @@ header {
   }
 
   .experience-section {
-    width: fit-content;
+    width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
   }
@@ -990,7 +1062,8 @@ header {
 
   .section-flexibility {
     padding: 25px 20px;
-    margin: 20px 20px 13vw;
+    width: calc(100% - 40px);
+    margin: 20px auto 13vw;
   }
 
   .intro-title {
@@ -1082,7 +1155,9 @@ header {
   }
 
   .experience-section {
-    width: fit-content;
+    width: calc(100% - 40px);
+    padding: 25px 20px 0;
+    margin: 20px;
   }
 
   .menu-icon {
@@ -1119,7 +1194,7 @@ header {
   .hero-info {
     position: absolute;
     left: 5%;
-    margin-bottom: 30px;
+    margin-bottom: -35px;
   }
 
   .hero-info-title {
@@ -1169,7 +1244,8 @@ header {
 
   .section-flexibility {
     padding: 25px 0;
-    margin: 20px 0 13vw;
+    width: calc(100% - 40px);
+    margin: 20px auto 13vw;
   }
 
   .intro-title {

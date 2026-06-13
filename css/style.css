@@ -9,12 +9,12 @@ html {
 }
 
 @font-face {
-    font-family: 'Monocraft';
-    src: url('Monocraft.woff2') format('woff2'),
-        url('Monocraft.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Monocraft';
+  src: url('Monocraft.woff2') format('woff2'),
+      url('Monocraft.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -235,11 +235,11 @@ header {
   background-color: #2200493d;
   box-shadow: 0 0 5px rgba(114, 161, 222, 0.53);
   cursor: pointer;
-  transition: 0.2s;
+  transition: 0.4s;
 }
 
 .hero-info button:hover {
-  transform: translateY(-5px);
+  transform: translateX(15px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -485,7 +485,6 @@ header {
   background: rgba(114, 161, 222, 0.3);
   border-color: var(--accent);
   box-shadow: 0 0 15px rgba(114, 161, 222, 0.4);
-  transform: translateY(-3px);
 }
 
 .section-flexibility {

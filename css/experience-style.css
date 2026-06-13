@@ -260,7 +260,6 @@ header {
 }
 
 .experience-card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -336,7 +335,6 @@ header {
 }
 
 .event-content:hover{
-  transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -419,7 +417,6 @@ header {
 }
 
 .languages:hover {
-  transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -454,7 +451,6 @@ header {
 }
 
 .project-division:hover{
-  transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -482,7 +478,7 @@ header {
 }
 
 .software-projects:hover{
-  transform: translateY(-5px);
+  transform: translateY(-2px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -501,7 +497,6 @@ header {
 }
 
 .software-project-title:hover{
-  transform: translateY(-5px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }

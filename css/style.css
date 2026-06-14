@@ -43,7 +43,7 @@ body {
   box-shadow: 0 8px 40px #00000080;
 }
 
-.container {
+.parent {
   position: relative;
   width: 100%;
   height: 100%;
@@ -332,7 +332,7 @@ header {
 
 
 
-/* the purple line u see aftr every section is cuz of this */
+/* the purple line u see aftr every section is cuz of this(i pasted it from my other project🤪) */
 .line{
   width: 92%;
   height: 3.5px;
@@ -342,7 +342,7 @@ header {
 }
 
 
-.info-section {
+.abtme {
   position: relative;
   width: 100%;
   min-height: fit-content;
@@ -356,12 +356,12 @@ header {
   background-color: #0c0c44;
 }
 
-.info-container {
+.abtme-container {
   max-width: fit-content;
   width: 100%;
 }
 
-.profile-card {
+.profile {
   padding: 20px 70px;
   text-align: center;
   min-height: 700px;
@@ -378,7 +378,7 @@ header {
   margin: -52px auto 25px;
 }
 
-.profile-image {
+.pfp {
   width: 180px;
   height: 195px;
   /* margin: -52px auto 30px; */
@@ -403,13 +403,13 @@ header {
   object-fit: cover;
 }
 
-.profile-image img {
+.pfp img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.intro-title {
+.abtme-title {
   font-family: 'Monocraft', monospace;
   font-size: 48px;
   font-weight: 700;
@@ -427,7 +427,7 @@ header {
   font-style: normal;
 }
 
-.intro-title-name{
+.abtme-title-name{
   left: -70px;
   font-family: "Press Start 2P";
   font-size: 54px;
@@ -440,9 +440,8 @@ header {
   z-index: 0;
 }
 
-
 /* it adds a outline on my name so it looks like the text is behind my image and its outline is visible(trust me it was so frustrating to code this like ahhhh!!! ohh myy gooodddd) */
-.intro-title-name-outline {
+.abtme-title-name-outline {
   font-family: "Press Start 2P";
   font-size: 54px;
   font-weight: 400;
@@ -457,10 +456,20 @@ header {
   -webkit-text-stroke-color: #ffffff;
 }
 
+/* the comment u r seeing below was a failed attempt but i have attacement issues😭 sooo idc if u dont like a big chunk of commented out useless peice of code, i am going to keep it anyways*/
+
+/* .intro-title-name::after{
+  content: "Tanish";
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: 3;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #ff01018a;
+} */
 
 
-
-.intro-text {
+.abtme-text {
   font-family: 'Monocraft', monospace;
   font-size: 17px;
   line-height: 32px;
@@ -470,11 +479,17 @@ header {
   max-width: 1095px;
 }
 
-.intro-text:last-of-type {
+.abtme-text:last-of-type {
   margin-bottom: 0;
 }
 
-.tech-section {
+
+
+
+
+
+
+.my-tech-knowledge {
   padding: 10px 70px;
   margin: 40px auto;
   width: 87%;
@@ -553,7 +568,14 @@ header {
   box-shadow: 0 0 15px rgba(114, 161, 222, 0.4);
 }
 
-.section-flexibility {
+
+
+
+
+
+
+
+.flexibility {
   padding: 0 0 50px;
   margin-top: 40px;
   /*the margin given below is given so that the user can scroll a lil more to read the section properly*/
@@ -610,7 +632,15 @@ header {
   object-fit: cover;
 }
 
-.passion-section {
+
+
+
+
+
+
+
+
+.passion {
   padding: 80px 60px;
   margin: 40px auto;
   width: 88%;
@@ -643,7 +673,13 @@ header {
   text-align: center;
 }
 
-.experience-section {
+
+
+
+
+
+
+.experience {
   display: flex;
   align-items: center;
   padding: 30px 0 0;
@@ -662,6 +698,14 @@ header {
   color: white;
 }
 
+
+/* u might have got bored seeing my code so heres a lame joke for u
+
+
+why did the css developer break up with the html developer?
+
+because they had no class 😭
+*/
 .experience-intro {
   font-size: 17px;
   line-height: 20px;
@@ -857,6 +901,11 @@ header {
     width: 250px;
   }
 
+  .code-block{
+    margin: 350px 40px 0 0;
+    width: 390px;
+  }
+
   .hero-info {
     position: absolute;
     left: 5%;
@@ -957,6 +1006,11 @@ header {
     width: 250px;
   }
 
+  .code-block{
+    margin-top: 550px;
+    width: 370px;
+  }
+
   .hero-info {
     position: absolute;
     left: 5%;
@@ -1031,6 +1085,11 @@ header {
     mix-blend-mode: lighten;
     margin-bottom: 500px;
     width: 250px;
+  }
+
+  .code-block {
+    margin-top: 400px;
+    width: 370px;
   }
 
   .profile-card {
@@ -1191,10 +1250,14 @@ header {
     width: 250px;
   }
 
+  .code-block {
+    margin: 485px 0 0 0;
+  }
+
   .hero-info {
     position: absolute;
     left: 5%;
-    margin-bottom: -35px;
+    margin-bottom: 55px;
   }
 
   .hero-info-title {
@@ -1286,5 +1349,17 @@ header {
   .logo img {
     width: 40px;
     height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+    .code-block {
+      display: none;
+  }
+  .hero-info {
+    position: absolute;
+    left: 5%;
+    margin-bottom: -55px;
   }
 }

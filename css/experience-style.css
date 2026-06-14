@@ -15,6 +15,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* supp gng if ur reading this i hope ur having a good day (unlike me while i was coding this 😭😭😭😭😭) */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
@@ -26,8 +27,7 @@ body {
 
 .card {
   background: rgba(15, 15, 30, 0.6);
-  border: 2px solid rgba(114, 161, 222, 0.25);
-  border-radius: 40px;
+  border-radius: 30px;
   backdrop-filter: blur(5px);
   box-shadow: 0 8px 40px #00000080;
 }
@@ -180,7 +180,7 @@ header {
   z-index: 1;
 }
 
-.experience-header {
+.exp-top {
   text-align: center;
   margin-bottom: 80px;
   padding: 60px 40px;
@@ -196,7 +196,7 @@ header {
   margin-bottom: 20px;
 }
 
-.experience-header h1 {
+.exp-top h1 {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -210,6 +210,8 @@ header {
   letter-spacing: 1px;
 }
 
+
+/* here comes the coooll part (i copied this idead from yt and wht u gonna do judge me atleast i dont paste codes from some ai model out there) */
 .timeline {
   position: relative;
   padding-left: 50px;
@@ -221,6 +223,7 @@ header {
 .timeline::before {
   content: '';
   position: absolute;
+  /* the left: 18.6px is not a typo i spent 20 mins getting that right */
   left: 18.6px;
   top: 0;
   bottom: 0;
@@ -250,6 +253,7 @@ header {
 .experience-card {
   background: rgba(15, 15, 30, 0.7);
   width: 100%;
+  /* yes i hardcoded width: 1100px and no i will not fix it wht u gonna do abt it huh 😼😏??*/
   max-width: 1100px;
   backdrop-filter: blur(20px);
   border-radius: 20px;
@@ -438,19 +442,20 @@ header {
 
 
 
-.project-division{
+.proj-split{
   padding-left: 30px;
   padding-right: 30px;
   margin: 50px 45px 30px;
   width: fit-content;
   height: fit-content;
+  border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
   transition: 0.3s;
 }
 
-.project-division:hover{
+.proj-split:hover{
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
 }
@@ -465,9 +470,10 @@ header {
 
 
 
-.software-projects{
+.software-projs{
   padding: 30px 40px;
   margin-top: 30px;
+  /* margin-left: 120px cuz 100 was too less and 150 was too much idk if i have OCD or what (but i do have attachement issues😛😭😭)*/
   margin-left: 120px;
   margin-bottom: 30px;
   width: fit-content;
@@ -477,7 +483,7 @@ header {
   transition: 0.3s;
 }
 
-.software-projects:hover{
+.software-projs:hover{
   transform: translateY(-2px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   border-color: rgba(114, 161, 222, 0.5);
@@ -490,6 +496,7 @@ header {
   margin-top: 35px;
   margin-right: 45px;
   margin-bottom: 30px;
+  border: 2px solid rgba(114, 161, 222, 0.25);
   border-radius: 25px;
   width: fit-content;
   height: fit-content;
@@ -568,7 +575,7 @@ header {
 }
 
 
-
+/* there u go laides and thier mens here comes the headache, making the website responsive (GOD! i hate this so muchh but it freaking needs to be done AAGGGHHHHH!!!!!) */
 @media (max-width: 1200px) {
   .timeline-item,
   .experience-card {
@@ -590,7 +597,7 @@ header {
     margin: 20px 25px;
   }
 
-  .software-projects {
+  .software-projs {
     margin-left: 40px;
   }
 
@@ -618,12 +625,12 @@ header {
     width: calc(100vw - 60px);
   }
 
-  .experience-header {
+  .exp-top {
     padding: 35px 20px;
     margin-bottom: 50px;
   }
 
-  .experience-header h1 {
+  .exp-top h1 {
     font-size: 30px;
   }
 
@@ -646,13 +653,13 @@ header {
     padding-right: 0;
   }
 
-  .project-division {
+  .proj-split {
     margin: 25px 0 15px;
     padding-left: 20px;
     padding-right: 20px;
   }
 
-  .software-projects {
+  .software-projs {
     margin-left: 0;
     padding: 20px;
   }
@@ -677,7 +684,7 @@ header {
     display: none;
   }
 
-  .experience-header h1 {
+  .exp-top h1 {
     font-size: 24px;
   }
 

@@ -931,7 +931,7 @@ because they had no class 😭
     margin-top: 25px;
   }
   
-  .profile-card {
+  .profile {
     padding: 20px 20px;
     min-height: unset;
   }
@@ -945,7 +945,7 @@ because they had no class 😭
     gap: 20px;
   }
 
-  .experience-section {
+  .experience {
     width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
@@ -1017,7 +1017,7 @@ because they had no class 😭
     margin-bottom: 150px;
   }
   
-  .profile-card {
+  .profile {
     padding: 20px 20px;
     min-height: unset;
   }
@@ -1031,7 +1031,7 @@ because they had no class 😭
     gap: 20px;
   }
 
-  .experience-section {
+  .experience {
     width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
@@ -1092,7 +1092,7 @@ because they had no class 😭
     width: 370px;
   }
 
-  .profile-card {
+  .profile {
     padding: 20px 20px;
     min-height: unset;
   }
@@ -1107,7 +1107,7 @@ because they had no class 😭
     gap: 20px;
   }
 
-  .experience-section {
+  .experience {
     width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
@@ -1125,8 +1125,8 @@ because they had no class 😭
     margin: 20px auto 13vw;
   }
 
-  .intro-title {
-    font-size: 32px;
+  .hero-info-title {
+    font-size: 20px;
   }
 
   .tech-title,
@@ -1213,7 +1213,7 @@ because they had no class 😭
     width: 100%;
   }
 
-  .experience-section {
+  .experience {
     width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;
@@ -1278,7 +1278,7 @@ because they had no class 😭
     margin-top: 15px;
   }
   
-  .profile-card {
+  .profile {
     padding: 20px 20px;
     min-height: unset;
   }
@@ -1293,7 +1293,7 @@ because they had no class 😭
     gap: 20px;
   }
 
-  .experience-section {
+  .experience {
     width: calc(100% - 40px);
     padding: 25px 20px 0;
     margin: 20px;

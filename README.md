@@ -47,7 +47,7 @@ cd main-portfolio
 
 ## AI usage
 
-I used AI to help debug a few things (the video autoplay issue on mobile, some CSS questions) and to bounce ideas off. The code and design are mine. I mostly used it for asking questions related to my bugs.
+I used AI to help debug a few things (the video autoplay issue on mobile, some CSS questions) and to get some ideas. The code and design are mine. I mostly used it for asking questions related to my bugs. I also used AI while deploying this like I faced some errors on the mobile version of this website so to debug I used AI.
 
 ---
 

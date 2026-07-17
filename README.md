@@ -14,6 +14,23 @@ heyy, this is a portfolio of a 14 year old who wanted to actually understand wha
 
 ---
 
+## Preview of it (Screenshots)
+-Home page:
+<img width="1899" height="915" alt="Screenshot 2026-07-17 105831" src="https://github.com/user-attachments/assets/9ed5fc8b-0d72-4f3e-96ba-73e94a0da068" />
+
+-More on the home page:
+<img width="1897" height="909" alt="Screenshot 2026-07-17 105858" src="https://github.com/user-attachments/assets/2b1f9bad-d5a4-4abe-8e0f-7158e6707fd8" />
+<img width="1899" height="909" alt="Screenshot 2026-07-17 105930" src="https://github.com/user-attachments/assets/6b081fad-eef1-4c84-a0e9-05af93aa7b99" />
+
+-Experience:
+<img width="1896" height="910" alt="Screenshot 2026-07-17 110012" src="https://github.com/user-attachments/assets/b0e3a3c5-009d-4e0e-95cc-1b62ef21b91c" />
+<img width="1902" height="903" alt="Screenshot 2026-07-17 110028" src="https://github.com/user-attachments/assets/143c0df9-2a6d-43b6-b6e9-822b175d9f43" />
+
+Contact me:
+<img width="1897" height="914" alt="Screenshot 2026-07-17 110056" src="https://github.com/user-attachments/assets/838fb433-b96b-4378-81b3-9bd5cb20ae16" />
+
+---
+
 ## Tools I used
 
 - HTML, CSS and JavaScript

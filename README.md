@@ -1,4 +1,4 @@
-# My Portfolio — tanish-sha.vercel.app
+# My Portfolio — codedbytanish.com
 
 heyy, this is a portfolio of a 14 year old who wanted to actually understand what goes into making a real website. No templates, no builders — just HTML, CSS, and JavaScript.
 

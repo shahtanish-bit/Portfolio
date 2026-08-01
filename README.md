@@ -1,4 +1,4 @@
-# My Portfolio — codedbytanish.com
+# My Portfolio — https://codedbytanish.com
 
 heyy, this is a portfolio of a 14 year old who wanted to actually understand what goes into making a real website. No templates, no builders — just HTML, CSS, and JavaScript.
 
